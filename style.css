@@ -1,0 +1,354 @@
+*,
+*::before,
+*::after {
+    padding:0px;
+    margin: 0px;
+    box-sizing: inherit;
+    font-family: "TTLakes";
+}
+
+
+
+/*-----------ШРИФТЫ -----------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: "TTLakes";
+    font-display: swap;
+    font-style: medium;
+    font-weight: 500;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("TTLakes"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("fonts/TTLakes-Medium.woff") format("woff");
+  }
+  @font-face {
+    font-family: "TTLakes";
+    font-display: swap;
+    font-style: bold;
+    font-weight: 700;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("TTLakes"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("fonts/TTLakes-Bold.woff") format("woff");
+  }
+  @font-face {
+    font-family: "TTLakes";
+    font-display: swap;
+    font-style: regular;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("TTLakes"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("fonts/TTLakesCondensed-Regular.woff") format("woff");
+  }
+
+  /*----------ШАПКА------------------------------------------------------------------------------------------------*/
+html,
+body {
+  position: relative;
+}
+
+  
+  .services{
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    min-width: 320px;
+    height: 80px;
+    background-image: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    border-top: 1px solid #D9FFF5;
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__title {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'TTLakes';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    width: 256px;
+    flex-wrap: wrap;
+  }
+
+
+/*-------------------------------------------Код Свайпера-----------*/
+
+
+.swiper {
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-left: 16px;
+  width: 304px; 
+  height: 112px;
+  margin-right: 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 240px;
+  height: 72px;
+  
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+a{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  margin: 16px;
+  width: 100%;
+}
+
+.main__logotypes {
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+}
+
+.slider__fade-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.slider__fade-container .fade-right {
+  top: 0;
+  right: 0;
+  background: linear-gradient(270deg,#f8f8f8 17%,hsla(0,0%,97.3%,0));
+  position: absolute;
+  height: 100%;
+  width: 24px;
+  z-index: 5;
+}
+
+.swiper-pagination {
+  display: flex;
+  left: 40px !important;
+  width: 204px !important;
+  justify-content: space-between;
+}
+
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+}
+
+
+
+
+.swiper-pagination-bullet {
+  background-color: #DDDDDD;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+
+.content__button {
+  display: none;
+}
+
+
+
+/*-------------------------------------------Конец кода Свайпера---------*/
+
+  .main__logo {
+    margin-right: auto;
+  }
+
+  .main__icon {
+    background-image: url(image/go.svg);
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+  }
+
+  .main__logo--lenovo {
+    background-image: url(image/Bitmap.png);
+    width: 108px;
+    height: 32px;
+  }
+
+  .main__logo--samsung {
+    background-image: url(image/Samsung.png);
+    width: 116px;
+    height: 38px;
+  }
+
+  .main__logo--apple {
+    background-image: url(image/apple.png);
+    width: 44px;
+    height: 44px;
+  }
+
+  .main__logo--viewsonic {
+    background-image: url(image/viewsonic.png);
+    width: 128px;
+    height: 21px;
+  }
+
+  .main__logo--bosch {
+    background-image: url(image/bosch.png);
+    width: 128px;
+    height: 28px;
+  }
+
+  .main__logo--hp {
+    background-image: url(image/hp.png);
+    width: 52px;
+    height: 52px;
+  }
+
+  .main__logo--acer {
+    background-image: url(image/acer.png);
+    width: 94px;
+    height: 24px;
+  }
+
+  .main__logo--sony {
+    background-image: url(image/sony.png);
+    width: 128px;
+    height: 25px;
+  }
+
+  .main__logo--lenovo {
+    background-image: url(image/Bitmap.png);
+    width: 108px;
+    height: 32px;
+  }
+
+  /*----------МЕДИАЗАПРОСЫ------------------------------------------------------------------------------------------------*/
+  @media (min-width:768px) {
+    
+    .header {
+      width: 768px;
+      height: 56px;
+      padding-left: 24px;
+
+    }
+
+    .header__title{
+      width: 338px;
+      height: 24px;
+    }
+
+    .swiper{
+      box-sizing: none;
+      margin: 24px;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      width: 760px ;
+      height: 165px;
+    }
+
+    .wrap {
+      flex-wrap: wrap;
+    }
+
+    .swiper-pagination {
+      display: none;
+    }
+
+    .slider__fade-container {
+      display: none;
+    }
+
+    .main__logotypes {
+      margin-bottom: 16px;
+      width: 224px;
+      margin-right: 24px;
+    }
+
+    .content__button {
+    display: block;
+    background: url(image/icon.svg) 0px; 
+    max-width: 126px;
+    max-height: 24px;
+    margin-left: 33px;
+    border: none;
+    background-repeat: no-repeat;
+    padding-left: 9px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-family: "TTLakes";
+    font-weight: bold;
+    color: #1B1C21;
+    }
+  }
+
+  @media (min-width:1120px) {
+    
+    .header {
+      width: 1120px;
+      height: 56px;
+      padding-left: 32px;
+    }
+
+    .header__title {
+      width: 338px;
+      height: 24px;
+    }
+
+    .swiper {
+      box-sizing: none;
+      margin-left: 32px;
+      margin-right: 33px;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      width: 1096px ;
+      height: 165px;
+    }
+
+    .wrap {
+      flex-wrap: wrap;
+    }
+
+    .swiper-pagination {
+      display: none;
+    }
+
+    .slider__fade-container {
+      display: none;
+    }
+
+    .main__logotypes {
+      margin-bottom: 16px;
+      width: 240px;
+      margin-right: 32px;
+    }
+  }
